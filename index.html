@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>WarmEditorial | Warisan Modern Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error-container": "#93000a",
+                    "on-surface": "#1e1b13",
+                    "on-secondary": "#ffffff",
+                    "inverse-primary": "#ffb4a5",
+                    "surface": "#fff8ef",
+                    "on-secondary-container": "#546a2e",
+                    "primary-container": "#e2725b",
+                    "primary": "#9f402d",
+                    "surface-dim": "#e1d9cb",
+                    "tertiary-fixed-dim": "#5cdbc2",
+                    "outline-variant": "#ddc0ba",
+                    "secondary-container": "#cfe99f",
+                    "inverse-surface": "#343026",
+                    "secondary": "#50652a",
+                    "secondary-fixed-dim": "#b6d088",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-fixed": "#00201a",
+                    "on-secondary-fixed-variant": "#394d14",
+                    "surface-container-highest": "#e9e2d3",
+                    "on-tertiary-fixed-variant": "#005144",
+                    "surface-container-high": "#efe7d9",
+                    "on-tertiary-container": "#00322a",
+                    "on-primary-fixed": "#3e0500",
+                    "tertiary": "#006b5b",
+                    "primary-fixed": "#ffdad3",
+                    "error-container": "#ffdad6",
+                    "error": "#ba1a1a",
+                    "background": "#fff8ef",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container": "#f5edde",
+                    "secondary-fixed": "#d2eca2",
+                    "outline": "#89726d",
+                    "surface-variant": "#e9e2d3",
+                    "on-error": "#ffffff",
+                    "on-primary-container": "#5a0d02",
+                    "surface-container-low": "#fbf3e4",
+                    "inverse-on-surface": "#f8f0e1",
+                    "on-secondary-fixed": "#131f00",
+                    "tertiary-container": "#00a58e",
+                    "primary-fixed-dim": "#ffb4a5",
+                    "on-surface-variant": "#56423e",
+                    "on-primary-fixed-variant": "#802918",
+                    "tertiary-fixed": "#7bf8dd",
+                    "on-primary": "#ffffff",
+                    "surface-tint": "#9f402d",
+                    "surface-bright": "#fff8ef",
+                    "on-background": "#1e1b13"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #fff8ef;
+            color: #1e1b13;
+        }
+        h1, h2, h3, .serif {
+            font-family: 'Noto Serif', serif;
+        }
+        .editorial-shadow {
+            box-shadow: 0 20px 50px -12px rgba(159, 64, 45, 0.08);
+        }
+        .glass-nav {
+            background: rgba(253, 251, 247, 0.8);
+            backdrop-filter: blur(16px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<nav class="sticky top-0 w-full z-50 glass-nav">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<a class="text-2xl font-serif font-bold text-[#9f402d] dark:text-[#e2725b] tracking-tighter" href="#">Azizah qirani adila</a>
+<div class="hidden md:flex gap-8 items-center font-['Noto_Serif'] font-medium tracking-tight">
+<a class="text-[#9f402d] dark:text-[#e2725b] font-bold border-b-2 border-[#9f402d] pb-1" href="#home">Beranda</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#9f402d] transition-colors duration-300" href="#tentang-kami">Tentang Kami</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#9f402d] transition-colors duration-300" href="#layanan">Layanan</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#9f402d] transition-colors duration-300" href="#kontak">Kontak</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-medium scale-95 active:opacity-80 transition-transform">
+                Hubungi Kami
+            </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center overflow-hidden pt-20" id="home">
+<div class="max-w-7xl mx-auto px-8 w-full grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-7 z-10">
+<span class="text-primary font-semibold tracking-widest uppercase text-xs mb-4 block">ESTETIKA DIGITAL MODERN</span>
+<h1 class="text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.1] text-on-surface mb-8 tracking-tighter">
+                        Azizah <br/>
+</h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-lg mb-10 leading-relaxed font-light">
+                        Perkenalkan, nama saya Azizah Qirani Adila. Saya merupakan siswi kelas 10 PPLG. Saya adalah pribadi yang bersemangat dalam belajar, terutama dalam bidang pengembangan perangkat lunak dan teknologi. Saya senang mencoba hal-hal baru, bekerja sama dalam tim, serta terus mengembangkan kemampuan diri agar menjadi lebih baik setiap harinya. Semoga ke depannya saya dapat meraih prestasi dan memberikan manfaat bagi orang lain.
+
+                    </p>
+<div class="flex gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-all flex items-center gap-2">
+                            Mulai Proyek <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="md:col-span-5 relative">
+<div class="aspect-[4/5] rounded-[2rem] overflow-hidden editorial-shadow transform rotate-3">
+<img class="w-full h-full object-cover" data-alt="Modern minimalist office interior with warm wood accents, large windows, and soft natural sunlight filtering through plants" src="jija1.jpeg"/>
+</div>
+<div class="absolute -bottom-10 -left-10 w-48 h-48 bg-secondary-container rounded-full flex items-center justify-center p-8 text-center editorial-shadow -rotate-6">
+<p class="text-on-secondary-container font-headline font-bold text-sm leading-tight">Terbaik di Bidang Desain Kontemporer</p>
+</div>
+</div>
+</div>
+<!-- Decorative Background Element -->
+<div class="absolute top-0 right-0 w-1/3 h-full bg-surface-container-low -z-10 rounded-l-[10rem]"></div>
+</section>
+<!-- Statistics & Philosophy -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-12">
+<div class="space-y-2">
+<h3 class="text-5xl font-bold text-primary">120+</h3>
+<p class="text-on-surface-variant font-medium">Proyek Selesai</p>
+</div>
+<div class="space-y-2">
+<h3 class="text-5xl font-bold text-primary">45</h3>
+<p class="text-on-surface-variant font-medium">Klien Global</p>
+</div>
+<div class="space-y-2">
+<h3 class="text-5xl font-bold text-primary">12</h3>
+<p class="text-on-surface-variant font-medium">Penghargaan Desain</p>
+</div>
+<div class="space-y-2">
+<h3 class="text-5xl font-bold text-primary">8th</h3>
+<p class="text-on-surface-variant font-medium">Tahun Berkarya</p>
+</div>
+</div>
+<div class="mt-20 max-w-3xl border-l-4 border-primary pl-10">
+<p class="text-2xl font-headline italic leading-relaxed text-on-surface-variant">
+                        "Desain yang baik adalah tentang bagaimana kita menceritakan sebuah kisah tanpa harus mengucapkan sepatah kata pun. Kami percaya pada kekuatan keheningan visual."
+                    </p>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-32 bg-surface" id="layanan">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+<div class="max-w-2xl">
+<span class="text-primary font-bold uppercase tracking-widest text-sm block mb-4">KEAHLIAN KAMI</span>
+<h2 class="text-4xl md:text-5xl font-bold tracking-tight">Layanan Utama Kami Untuk Transformasi Anda</h2>
+</div>
+<p class="text-on-surface-variant max-w-sm mb-2">
+                        Pendekatan holistik yang menggabungkan strategi bisnis dengan eksekusi visual kelas atas.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Service Card 1 -->
+<div class="p-10 rounded-[2.5rem] bg-surface-container-low hover:bg-surface-container transition-all group border border-transparent hover:border-outline-variant/30">
+<div class="w-16 h-16 bg-primary-fixed rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">brush</span>
+</div>
+<h3 class="text-2xl font-bold mb-4">Digital Editorial</h3>
+<p class="text-on-surface-variant leading-relaxed mb-8">
+                            Transformasi konten tradisional menjadi pengalaman digital yang memikat dan mudah dinavigasi.
+                        </p>
+<a class="inline-flex items-center text-primary font-bold gap-2 group/link" href="#">
+                            Pelajari <span class="material-symbols-outlined group-hover/link:translate-x-1 transition-transform">east</span>
+</a>
+</div>
+<!-- Service Card 2 -->
+<div class="p-10 rounded-[2.5rem] bg-surface-container-high hover:bg-surface-container transition-all group scale-105 editorial-shadow z-10 border border-transparent hover:border-outline-variant/30">
+<div class="w-16 h-16 bg-secondary-fixed rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-secondary text-3xl">brand_awareness</span>
+</div>
+<h3 class="text-2xl font-bold mb-4">Brand Identity</h3>
+<p class="text-on-surface-variant leading-relaxed mb-8">
+                            Membangun fondasi visual yang kuat, konsisten, dan memiliki daya tarik jangka panjang bagi pasar Anda.
+                        </p>
+<a class="inline-flex items-center text-primary font-bold gap-2 group/link" href="#">
+                            Pelajari <span class="material-symbols-outlined group-hover/link:translate-x-1 transition-transform">east</span>
+</a>
+</div>
+<!-- Service Card 3 -->
+<div class="p-10 rounded-[2.5rem] bg-surface-container-low hover:bg-surface-container transition-all group border border-transparent hover:border-outline-variant/30">
+<div class="w-16 h-16 bg-tertiary-fixed rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-tertiary text-3xl">web</span>
+</div>
+<h3 class="text-2xl font-bold mb-4">Web Development</h3>
+<p class="text-on-surface-variant leading-relaxed mb-8">
+                            Pengembangan situs web berperforma tinggi dengan animasi yang halus dan struktur yang responsif.
+                        </p>
+<a class="inline-flex items-center text-primary font-bold gap-2 group/link" href="#">
+                            Pelajari <span class="material-symbols-outlined group-hover/link:translate-x-1 transition-transform">east</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-32 bg-surface-container-low overflow-hidden" id="tentang-kami">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="relative order-2 lg:order-1">
+<div class="grid grid-cols-2 gap-6">
+<div class="space-y-6 pt-12">
+<img class="rounded-3xl aspect-[3/4] object-cover editorial-shadow" data-alt="Professional man with glasses in a minimalist creative studio setting, soft side lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3ZXDaEUhjvIgr21_D9DTZlQW4hTv47-0eTZ_w5gN6h8xW0RGlnokUnBoHfKmnUF8KczRK8GxRV1Bk-_QcREYYqb31FO7ypg8W538gORvcAqOMeQW4hHCljNbtJ1xIhrp3Fc17DPuU9UIo-K8_mplOAjepIeL1X6V78Nl83qLJrI35RrsaLxTNYhbysi2n4rTDzL3WCNAU1Kmq7xgNCOr71sEjIlH6JylLiGvdqanrzHEiUkFAJHJpWPDT1ozbFl0eN3gIRMfL5w"/>
+<img class="rounded-3xl aspect-[1/1] object-cover editorial-shadow" data-alt="Professional woman architect looking at plans in a sunlit airy workspace with minimalist decor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDn8pn3GnnHq4Sx3nSBQV6Bi480PwflL83kkhhLa-WDcTRm_TwtNSRnti7hMrNE1e2UF260JB-CbIonc9tV_OiPGkyHHIGkVF5DXOxQFU1LwyN3Tw8GGvgbjtysHONuJ-PjZFUB-ldU92MRWLsEdDbEmnnkKBpQ5h3LKa3ca9wXLWpIQJFVDqjqq4_27WU9zzlShGLezt7CdU0e3PazQPx8BDMX5T5Q8GOz8eZut5shiiiSoFPuESxwlqoE-ADsuu4HHtA65LQYxg"/>
+</div>
+<div class="space-y-6">
+<img class="rounded-3xl aspect-[1/1] object-cover editorial-shadow" data-alt="Group of diverse creative professionals collaborating around a large wooden table in a bright modern office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCD6p4ZsrR3-QcGRbXs1H4RAywKsbF7MRDEQFTDcWMAavak75HXOUTWCxOxRuQlDaYrYYrrgdN2zxNHjvHLmVsOCGMqutbNr8MR1M79yrubCcNwpis-dOu155T58f9zRucRiqxQY3VQ5DBtingHcsaTHstOFoO2tQXPRAApCwitYJLxSVOo5UoyeNtYkNBLWKTZaE_1hH5no0XwUw3c3HwkmcQljPFF_e3QyXRYpdulAhXkAoDnbSeS9V57A6AKL6VkYlPmMYrqSg"/>
+<img class="rounded-3xl aspect-[3/4] object-cover editorial-shadow" data-alt="Creative meeting in a room with white walls and warm lighting, focus on a whiteboard with clean design concepts" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRhm566zrZsRCyMMEz0YLIj39cTMFQsA6HBT19awI1MZaEEza8EoSxsP1v8YEFfMy9dPMb8DPnv0MDYdJg0TZ8Ugo757XA18Ua1-c1p61_Kwh-NwKL7yMfEom4fsq6H5aRADlyS8pdLUEr9GFBBDJa36k2kT1qLQpo_BoVP_MjMjtssWbfexa43k5Oebif9LZ9yeAf8m40gtH42TrlU9VTebzXtVzYewrH7hS11pD9XYiBsxncKBMQIsVr2C7kjed-dRz1-NYRXQ"/>
+</div>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<span class="text-primary font-bold uppercase tracking-widest text-sm block mb-4">TENTANG KAMI</span>
+<h2 class="text-4xl md:text-5xl font-bold mb-8 leading-tight">Mengkuras Cerita Melalui Kehangatan Visual</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+                            Lahir dari keinginan untuk memanusiakan kembali dunia digital, WarmEditorial hadir sebagai studio desain yang memadukan presisi modern dengan kehangatan editorial klasik.
+                        </p>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-10">
+                            Kami percaya setiap brand memiliki frekuensi uniknya sendiri. Tugas kami adalah menemukannya, membersihkannya, dan menyuarakannya melalui desain yang abadi.
+                        </p>
+<div class="grid grid-cols-2 gap-8">
+<div>
+<h4 class="font-bold text-xl mb-2">Filosofi</h4>
+<p class="text-on-surface-variant text-sm">Kesederhanaan yang bermakna di atas kompleksitas yang hampa.</p>
+</div>
+<div>
+<h4 class="font-bold text-xl mb-2">Misi</h4>
+<p class="text-on-surface-variant text-sm">Memberikan nilai tambah yang terukur bagi setiap kolaborasi.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Portfolio Gallery -->
+<section class="py-32 bg-surface" id="layanan">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center max-w-3xl mx-auto mb-20">
+<span class="text-primary font-bold uppercase tracking-widest text-sm block mb-4">PORTFOLIO</span>
+<h2 class="text-4xl md:text-5xl font-bold mb-6">Karya Pilihan</h2>
+<p class="text-on-surface-variant text-lg">Eksplorasi estetika dan fungsionalitas yang kami wujudkan bagi klien kami.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-4 mb-16">
+<button class="px-6 py-2 rounded-full bg-primary text-on-primary font-medium">Semua</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:bg-primary-container/20 transition-colors font-medium">Branding</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:bg-primary-container/20 transition-colors font-medium">Digital</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:bg-primary-container/20 transition-colors font-medium">Editorial</button>
+</div>
+<!-- Asymmetric Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<div class="md:col-span-8 group cursor-pointer overflow-hidden rounded-[2.5rem]">
+<div class="relative aspect-[16/10] overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Minimalist website interface shown on a sleek laptop screen, white background, high-end typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPfahKQdiO0Cwi8GJeGAm1wpXbJaEzOVCsQ4HpkH3bh-apF2Xbg-U284kBD6AQVksvSNXpr0C3-NcDxGejwo70i4piSkV48aa0pnNfC5e2jHSrfrWazNRj97DPaXl14vqNUjKHsdNwHsIK53nyGtwUM5Wf_vjuIpr-35wNqhGnuDMr97wOoPaBnRGS1xX8TWi6Xcvy2PxRd6k0q_h2jD4nXhti7UDSuAc9W-W460380z8QvQOwsg2mAor_Hle1D_Y4rSFHRoi_vw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-10">
+<span class="text-on-primary/80 text-sm font-bold tracking-widest uppercase mb-2">Digital Architecture</span>
+<h4 class="text-3xl text-on-primary font-headline">Reinvention of Luxury</h4>
+</div>
+</div>
+</div>
+<div class="md:col-span-4 group cursor-pointer overflow-hidden rounded-[2.5rem]">
+<div class="relative h-full overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close-up of premium magazine layout with elegant serif fonts and high-fashion photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPIRXFo1evc2PENjbx206O_VmJiCS4z0Afrfs5REk2B1CIo1nauI_3ufJoHzkqYMOaEy85lFJFeYg0hcQk_P-3ZtlKx8wheaTLbFoeaacpkH5fPrRuDAIcuyWvo5AYeU-kL_cjRfo4nxInAZaqmWhABcGK-OCg9Q_1GtAmdma-Ijf09HYQWhm83TAXM7ixmgNeYrDKgvzla2_Z8hk8pXfToY0TsNUQFCAIaBjQnEpj61TzW0kqkXBBD5qNDdEhMnqWxzbFzxcoyg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8">
+<span class="text-on-primary/80 text-sm font-bold tracking-widest uppercase mb-2">Editorial Design</span>
+<h4 class="text-2xl text-on-primary font-headline">The Slow Living Issue</h4>
+</div>
+</div>
+</div>
+<div class="md:col-span-4 group cursor-pointer overflow-hidden rounded-[2.5rem]">
+<div class="relative aspect-[1/1] overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Visual branding elements including business cards and stationery with a minimalist clay and sand color palette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXQeBZaaCYggBOIAQT-YIDM5F8w0iZWe4Us12I9Mc1ytBgCAPMf4XRYRtZ28ciNK9QThcE7Z0WZ7KAPHYX2T1_htABwN09b6CAb0bFXW6iaSOnYDimJw1vc5HGIXHiZpjEozztagrreY-9lmQx5M74e245U0zEt546O732knNWpEVVQC5H2v2x6QtFUWxlxCAtfNc1VcUrg8z0TasgBqD2owSV2agXXh3LRwYr9EI0jCMtixSSNpLwW26BbRVqFhGCXZXOuGgsHw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8">
+<span class="text-on-primary/80 text-sm font-bold tracking-widest uppercase mb-2">Branding</span>
+<h4 class="text-2xl text-on-primary font-headline">Organic Essence</h4>
+</div>
+</div>
+</div>
+<div class="md:col-span-8 group cursor-pointer overflow-hidden rounded-[2.5rem]">
+<div class="relative aspect-[16/8] overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Clean dashboard design with elegant charts and soft drop shadows on a cream colored background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCL8srqA-79p867zOIGjLnGsEWUgik8Kkn8dsPUC4HbTBoo5p-DALMmWQtOrnfMg7LJv1ogpJbzmgIpyGQi1olADZcds_x_4yr5227YCJKst8JspokaSTFjwf4pGyB6GfY8Y0pPd5kG64ikvJRetXVq_4gaGU-j_Irr6PEWGy3GV-l7Ngfj3pXBM0hvMKeJ4kBPHFk_3--lGYeadSJG-HO-Fqd_poZuGOWbjl75q2Q1O5LWfvLxfbfm2CRswDXQgSIRcaeExg6Jyw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-10">
+<span class="text-on-primary/80 text-sm font-bold tracking-widest uppercase mb-2">Product Design</span>
+<h4 class="text-3xl text-on-primary font-headline">Analytics Refined</h4>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-32 bg-secondary-container/10">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+<div class="lg:col-span-4">
+<span class="text-primary font-bold uppercase tracking-widest text-sm block mb-4">TESTIMONI</span>
+<h2 class="text-4xl font-bold mb-6">Apa Kata Klien Kami</h2>
+<div class="flex gap-4 mb-8">
+<button class="w-12 h-12 rounded-full border border-outline flex items-center justify-center hover:bg-primary hover:text-white transition-all">
+<span class="material-symbols-outlined">west</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-outline flex items-center justify-center hover:bg-primary hover:text-white transition-all">
+<span class="material-symbols-outlined">east</span>
+</button>
+</div>
+</div>
+<div class="lg:col-span-8">
+<div class="bg-surface p-12 md:p-20 rounded-[3rem] editorial-shadow relative overflow-hidden">
+<span class="material-symbols-outlined text-[120px] absolute -top-4 -left-4 text-primary/5 select-none" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<div class="relative z-10">
+<p class="text-2xl md:text-3xl font-headline italic leading-relaxed text-on-surface-variant mb-12">
+                                    "Bekerja dengan WarmEditorial adalah sebuah pengalaman kurasi yang luar biasa. Mereka tidak hanya mendengarkan kebutuhan teknis kami, tapi menangkap esensi emosional dari brand kami."
+                                </p>
+<div class="flex items-center gap-6">
+<div class="w-16 h-16 rounded-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Portrait of a female CEO in a sophisticated neutral outfit, smiling confidently" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKH3Z8Qu5NYMkrqgDEhLIxN1RbokA7lx86aQV3rsEX0pdhD2wWvDv0ot3cSII40rksqf4iTvkoIt4RYsWRBb-xfhsCb5SldclId8tr9cnSv69_VFpKCpQWQ5ZtnjCy0m6OjDm3pWbZSanf8yzpR9Bgm7vfWLjo_S_gcwSByrv9mJZzh3UHzKBiUeCxoXvcznN9X5ksWJy4NWlH7YCQ128w1n4G2p5_qsj80TPwGPaGT8gcOiLeHuCZvOm3LwZyp9HHahTeN9Q_Fg"/>
+</div>
+<div>
+<h5 class="text-xl font-bold">Amanda Pradipta</h5>
+<p class="text-on-surface-variant">CEO, Lumiere &amp; Co.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-32 bg-surface" id="kontak">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+<div>
+<span class="text-primary font-bold uppercase tracking-widest text-sm block mb-4">KONTAK KAMI</span>
+<h2 class="text-4xl md:text-6xl font-bold mb-8 tracking-tighter">Mari Berdiskusi <br/>Tentang Proyek Anda</h2>
+<p class="text-on-surface-variant text-lg mb-12 max-w-md">
+                            Kami selalu terbuka untuk kolaborasi baru. Kirimkan pesan atau kunjungi studio kami untuk secangkir kopi.
+                        </p>
+<div class="space-y-8">
+<div class="flex items-start gap-6">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">mail</span>
+</div>
+<div>
+<h6 class="font-bold text-lg">Email</h6>
+<p class="text-on-surface-variant">azizahqiraniadila@gmail.com</p>
+</div>
+</div>
+<div class="flex items-start gap-6">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary">location_on</span>
+</div>
+<div>
+<h6 class="font-bold text-lg">Alamat</h6>
+<p class="text-on-surface-variant">Riau,indonesia</p>
+</div>
+</div>
+</div>
+<!-- Map Placeholder -->
+<div class="mt-12 rounded-[2rem] overflow-hidden h-64 grayscale opacity-80 hover:grayscale-0 transition-all">
+<img class="w-full h-full object-cover" data-alt="Minimalist urban map design with muted earth tones and clean street lines" data-location="Jakarta" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaAUze4PqeIMR4PJsc52OFN0oKw8YK2Rh2_2WQR_7K-380G9xxZOLKI-04L5FJvBlFWV_G-Z_qO2blSl94DTyLLz4ByuNIvc0KgNwXpZowTXSdfij46lbGYPijd2_iiy7SoriVEjUB9qqQCZxo1jS2u2IJlMxaZbmDDURC5J_j_Z8ZFL4Q1kHCTZdRRXqar7kEOBMfWDRHm23bFvEG3ECSKfVSM6bGEuM1eWl8eTHKPLu3teEhnpIehfUGgzEiTghbzWjZlKFYtQ"/>
+</div>
+</div>
+<div class="bg-surface-container-low p-8 md:p-12 rounded-[2.5rem] editorial-shadow">
+<form class="space-y-8">
+<div class="space-y-2">
+<label class="text-sm font-bold uppercase tracking-wider text-on-surface-variant">Nama Lengkap</label>
+<input class="w-full bg-transparent border-0 border-b-2 border-outline-variant focus:ring-0 focus:border-primary transition-all py-4 placeholder:text-stone-400" placeholder="Tulis nama anda" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold uppercase tracking-wider text-on-surface-variant">Alamat Email</label>
+<input class="w-full bg-transparent border-0 border-b-2 border-outline-variant focus:ring-0 focus:border-primary transition-all py-4 placeholder:text-stone-400" placeholder="email@contoh.com" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold uppercase tracking-wider text-on-surface-variant">Layanan yang Dibutuhkan</label>
+<select class="w-full bg-transparent border-0 border-b-2 border-outline-variant focus:ring-0 focus:border-primary transition-all py-4 text-on-surface-variant">
+<option>Digital Branding</option>
+<option>Editorial Design</option>
+<option>Web Development</option>
+<option>Lainnya</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold uppercase tracking-wider text-on-surface-variant">Pesan</label>
+<textarea class="w-full bg-transparent border-0 border-b-2 border-outline-variant focus:ring-0 focus:border-primary transition-all py-4 placeholder:text-stone-400 resize-none" placeholder="Ceritakan sedikit tentang proyek anda" rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary py-5 rounded-2xl font-bold text-lg hover:opacity-90 transition-all flex items-center justify-center gap-3" type="submit">
+                                Kirim Pesan <span class="material-symbols-outlined">send</span>
+</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-3xl mt-20 bg-stone-100 dark:bg-stone-900">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-10 gap-6">
+<div class="flex flex-col gap-2">
+<span class="text-xl font-serif text-[#9f402d] font-bold">WarmEditorial</span>
+<p class="font-['Plus_Jakarta_Sans'] text-sm text-stone-500">© 2024 WarmEditorial. Semua Hak Dilindungi.</p>
+</div>
+<div class="flex gap-8">
+<a class="text-stone-400 hover:text-[#9f402d] dark:hover:text-[#e2725b] transition-opacity font-['Plus_Jakarta_Sans'] text-sm" href="#">Kebijakan Privasi</a>
+<a class="text-stone-400 hover:text-[#9f402d] dark:hover:text-[#e2725b] transition-opacity font-['Plus_Jakarta_Sans'] text-sm" href="#">Syarat &amp; Ketentuan</a>
+</div>
+<div class="flex gap-6">
+<a class="text-[#9f402d] hover:opacity-80 transition-opacity font-medium" href="#">LinkedIn</a>
+<a class="text-[#9f402d] hover:opacity-80 transition-opacity font-medium" href="#">Instagram</a>
+</div>
+</div>
+</footer>
+</body></html>
